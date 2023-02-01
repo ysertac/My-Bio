@@ -1,0 +1,60 @@
+body {
+  background-color: blue;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  align-items: center; }
+
+.main {
+  background-color: green;
+  width: 200px;
+  height: 20px;
+  animation: a3 1s forwards 3s;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.main > .main {
+  background-color: green;
+  width: 20px;
+  height: 200px;
+  rotate: 45deg;
+  animation: a2 1s infinite 2s;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.main > .main > .main {
+  background-color: green;
+  width: 20px;
+  height: 200px;
+  rotate: -90deg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: a4 1s forwards 1s; }
+
+.main > .main > .main > .main {
+  background-color: green;
+  width: 20px;
+  height: 200px;
+  rotate: 45deg;
+  animation: a1 1s forwards; }
+
+@keyframes a1 {
+  to {
+    transform: translateY(-800px); } }
+
+@keyframes a3 {
+  to {
+    transform: translateX(-1600px); } }
+
+@keyframes a4 {
+  to {
+    transform: translateY(-1600px);
+    /* transform: translateX(-1600px) */ } }
+
+@keyframes a2 {
+  to {
+    transform: translateY(-1600px); } }
