@@ -1,0 +1,78 @@
+.mycontainer
+    max-width: $max-width
+    padding: 0 1.4rem
+    margin: auto
+
+.mt-3
+    margin-top: $mt3
+
+.pt-3
+    padding-top: $pt3
+
+.mb-3
+    margin-bottom: $mb3
+
+.pb-3
+    padding-bottom: $pb3
+
+//button
+%btnstyle-shared
+    display: inline-block
+    padding: .7rem .5rem
+    transition: all .5s
+    border: 2px solid black
+    border-radius: 2rem
+    cursor: pointer
+    font-size: 2rem
+
+.btnstyle
+    &-main
+        @extend %btnstyle-shared
+        color: #fff
+        background-color: $main-color
+        &:hover
+            background-color: darken($main-color, 25%)
+            color: lighten($main-color, 50%) 
+
+    &-light
+        @extend %btnstyle-shared
+        color: #000
+        background-color: $light-color
+        &:hover
+            color: $light-color
+            background-color: #000
+
+    &-dark
+        @extend %btnstyle-shared
+        color: #fff
+        background-color: $dark-color
+        &:hover
+            color: $dark-color
+            background-color: #fff
+
+.section-title
+    font-size: 3rem
+    text-align: center
+    text-transform: uppercase
+    padding: 1.5rem 0
+    
+.no-content
+    height: 2px
+    width: 10rem
+    background-color: $main-color
+    margin: 0 auto 3rem
+
+.lead
+    font-size: 2rem
+    text-align: justify
+    margin-bottom: 2rem
+    padding-bottom: 2rem
+
+input
+    border: 2px solid #fff
+    border-radius: 2rem
+    height: 2.7rem
+    width: 100%
+    text-align: center
+
+     

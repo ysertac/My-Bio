@@ -1,0 +1,74 @@
+#footer__home
+    background: $dark-color
+    color: #fff
+    /* height: 7rem */
+
+    .footer-content
+        display: grid
+        gap: 1.5rem
+        grid-template-columns: repeat(3, 1fr)
+        /* height: 7rem */
+        /* align-items: center */
+        /* font-size: 1.5rem */
+
+        div
+            &:first-child
+                font-size: 1.5em
+                text-align: justify
+            
+            &:nth-child(2)
+                display: flex
+                flex-direction: column
+                align-items: center
+                
+                *
+                    font-size: 1.5em
+                    
+                h3,label
+                    padding-bottom: 1rem
+
+                input
+                    margin-bottom: 1rem
+
+            &:nth-child(3)
+                text-align: center
+                align-self: center
+
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3)
+                padding: 2rem 2rem 0
+
+            &:nth-child(4)
+                grid-column: 1 / span 4
+                text-align: center
+                padding: 1rem 0
+
+                p
+                    font-size: 1.5em     
+
+        .mysocial a .fab
+
+            margin-right: 1rem
+            border: 2px solid white
+            border-radius: 50%
+            text-align: center
+            padding: .6rem
+            transition: .6s
+            font-size: 2rem
+            color: #fff
+            background: #000
+
+            &:hover
+                background: #fff
+                color: #000
+
+        input
+            background: $main-color
+            color: #fff            
+
+            &::-webkit-input-placeholder
+                color: #d0d0d0
+
+            &:focus
+                background: darken($main-color, 20%)

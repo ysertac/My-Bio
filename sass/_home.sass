@@ -1,0 +1,105 @@
+//First Section
+#home
+    //first section
+    &__a
+        margin-bottom: 2rem
+
+        .skills
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-gap: 4px
+
+            div
+                text-align: center
+                
+                h3
+                    font-size: 1.8em
+                    display: inline-block
+                    padding-bottom: 1rem
+                    padding-left: 1rem
+                    
+                p
+                    font-size: 1.5em
+                    padding: 0 1rem
+                    text-align: justify
+
+    //second section
+    &__b
+        .profile
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+
+            li
+                &.lititle
+                    font-size: 2rem
+
+                &.linumber
+                    font-size: 2rem
+                    font-weight: 800
+
+            div
+                padding: 5rem 0
+                text-align: center
+
+                &:nth-child(odd)
+                    background-color: lighten($dark-color, 40%)
+
+                    i
+                        color: $dark-color
+
+                    li
+                        color: $dark-color
+
+                &:nth-child(even)
+                    background-color: $dark-color
+                    
+                    i
+                        color: lighten($dark-color, 40%)
+                    
+                    li
+                        color: lighten($dark-color, 40%)
+
+    //third section
+    &__c                    
+        .process
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            gap: 2rem
+            text-align: center
+            padding-bottom: 8rem
+
+            h3
+                font-size: 1.5em
+
+            p
+                font-size: 1.5em
+                text-align: justify
+
+            &-step
+                position: absolute
+                top: 0
+                right: 0
+                font-size: 1.5rem
+                background-color: $dark-color
+                border-radius: 50%
+                line-height: 1.3rem
+                width: 3rem
+                padding: .8rem
+                transition: 1s
+
+            &__icon
+                position: relative
+                width: 90px
+                height: 90px
+                border-radius: 50%
+                background-color: black
+                color: #fff
+                padding: 2.2rem
+                text-align: center
+                transition: 1s
+
+                &:hover
+                    background: $dark-color
+
+                    .process-step
+                        background: #000
