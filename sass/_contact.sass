@@ -1,0 +1,34 @@
+#contact
+    &-a form
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 2rem
+
+        input
+            justify-self: center
+            height: 4.4rem
+            margin: .6rem 0
+            width: 90%
+            
+
+        textarea
+            height: 15rem        
+
+        textarea,
+        button
+            grid-column: 1 / span 2
+            width: 75%
+            justify-self: center
+            margin: .6rem 0
+            width: 90%
+            
+
+    &-b
+        background-color: $light-color
+        padding: 6rem 0
+
+        .contact-info
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            text-align: center
+            font-size: 2em

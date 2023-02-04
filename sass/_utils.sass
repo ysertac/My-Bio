@@ -68,11 +68,21 @@
     margin-bottom: 2rem
     padding-bottom: 2rem
 
-input
-    border: 2px solid #fff
+input,
+textarea
+    border: 2px solid #000
     border-radius: 2rem
     height: 2.7rem
     width: 100%
     text-align: center
+    background: $main-color
+    color: #fff
+    width: 65%
+    font-size: 1.5rem
 
+    &::-webkit-input-placeholder
+        color: #fff
+
+    &:focus
+        background: darken($main-color, 20%)
      

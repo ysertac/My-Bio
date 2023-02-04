@@ -1,0 +1,35 @@
+#project-section
+    padding: 6rem 0
+
+    .myitems
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 2rem
+        box-shadow: rgba(149, 154, 145, .2) 0px 8px 24px
+
+        .myitem
+            position: relative
+            background-color: lighten($dark-color, 40%)
+            overflow: hidden
+
+            &::after
+                content: ''
+                position: absolute
+                display: block
+                background-color: $light-color
+                opacity: .8
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                transform: translateX(-110%) rotate(45deg)
+                transition: .8s
+
+            &:hover::after
+                transform: translateX(-70%) rotate(45deg)
+
+            &__category
+                font-size: 1.5em
+
+            &__text__title
+                font-size: 2em
