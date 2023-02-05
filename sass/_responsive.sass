@@ -1,0 +1,290 @@
+//Tablet
+@media(max-width: 768px)
+    #header
+        &__home
+            height: 48rem
+            &::before
+                height: 48rem
+
+            .header-content
+                padding-top: 11rem
+
+                h1
+                    font-size: 2.4em
+
+                a
+                    font-size: 1.5rem
+                    width: 15rem
+
+            .main-nav
+                img
+                    width: 5rem
+
+        &__inner
+            height: 7rem
+
+            .main-nav
+                img
+                    width: 5rem
+
+    .lead
+        font-size: 1.6rem
+    
+    .section-title
+        font-size: 2.5rem
+    #home
+        &__a
+
+            .skills
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 1.5rem
+
+        &__b
+            .profile
+                grid-template-columns: repeat(2, 1fr)
+
+                div:nth-child(3)
+                    background-color: $dark-color
+                        
+                    li,
+                    i
+                        color: #cfcfcf
+
+                div:last-child
+                    background: #cfcfcf
+
+                    li,
+                    i
+                        color: $dark-color
+
+        &__c
+            .process
+                grid-template-columns: repeat(2, 1fr)
+                gap: 
+
+    #footer__home
+        .footer-content
+            grid-template-columns: repeat(2, 1fr)
+
+            div:first-child
+                grid-column: 1
+                font-size: 1.44em
+
+            div:nth-child(2)
+                grid-column: 2
+
+            div:last-child
+                grid-column: 1
+                grid-row: 2
+                padding: 3.5rem 0
+
+            .mysocial
+                grid-column: 2
+                padding: 2rem 0!important
+
+    //about
+    #about
+        &-b
+            h4
+                font-size: 1.5em
+
+            .progress
+                height: 1.3rem
+
+        &-c
+            .about-logos
+                height: 12rem
+
+    //references
+    #project-section
+        .myitems
+            grid-template-columns: repeat(2, 1fr)
+
+            .myitem__category
+                font-size: 1.3em
+
+            .myitem__text__title
+                font-size: 1.6em
+
+    //contact
+    #contact
+        &-b
+            padding: 3rem 0 
+            .contact-info
+                font-size: 1.5em
+
+    
+
+//Mobil
+@media ( max-width: 576px )
+    #header
+        &__home
+            height: 18rem
+            &::before
+                height: 18rem
+
+            .header-content
+                padding-top: 1rem
+
+                h1
+                    font-size: 1.3em
+
+                a
+                    font-size: 1.3rem
+                    height: 3rem
+                    width: 7rem
+                    padding: .5rem 0
+
+            .main-nav
+                flex-direction: column-reverse
+                align-items: center
+
+                &__items li a
+                    font-size: 1rem
+                img
+                    width: 3rem
+
+        &__inner
+            height: 9rem
+
+            .main-nav
+                flex-direction: column-reverse
+                align-items: center
+                
+                &__items li a
+                    font-size: 1rem
+                img
+                    width: 3rem
+
+    .lead
+        font-size: 1.26rem
+
+    .section-title
+        font-size: 2rem
+
+    #home
+        &__a
+
+            .skills
+                display: grid
+                grid-template-columns: repeat(1, 1fr)
+                gap: 1.5rem
+
+        &__b
+            .profile
+                grid-template-columns: repeat(1, 1fr)
+
+                div:nth-child(3)
+                    background-color: #cfcfcf
+                        
+                    li,
+                    i
+                        color: $dark-color
+
+                div:last-child
+                    background: $dark-color
+
+                    li,
+                    i
+                        color: #cfcfcf
+
+        &__c
+            .process
+                grid-template-columns: repeat(1, 1fr)
+                gap: 
+
+    #footer__home
+        .footer-content
+            grid-template-columns: 1fr
+            gap: 1rem
+
+            div:first-child
+                grid-row: 1
+                grid-column: 1
+                font-size: 1.44em
+
+            div:nth-child(2)
+                grid-row: 2
+                grid-column: 1
+
+            div:last-child
+                grid-row: 4
+                padding: 2rem 0
+
+            .mysocial
+                grid-row: 3
+                padding: 2rem 0!important
+                grid-column: 1
+
+    //about
+    #about
+        &-a .content-main
+            grid-template-columns: 1fr
+
+            .content-a h3
+                font-size: 1.5rem
+
+            .content-a p
+                font-size: 1.3rem
+
+        &-b
+            height: 60vh
+            margin: 0
+
+            #progress__bars
+                transform: rotate(-90deg)
+
+                h4
+                    font-size: 1.2em
+                    margin: 0 10rem 0 -8rem
+
+                .progress
+                    height: 1rem
+                    margin: 1rem 10rem 4rem -8rem
+                    
+        &-c
+            .about-logos
+                grid-template-columns: 1fr
+                gap: 3rem
+                height: 30rem
+
+    //references
+    #project-section
+        .myitems
+            grid-template-columns: 1fr
+
+            .myitem__category
+                font-size: 1.1em
+
+            .myitem__text__title
+                font-size: 1.3em
+
+    //contact
+    #contact
+        &-a
+            form
+                grid-template-columns: 1fr
+
+                .name
+                    grid-row: 1
+                
+                .subject
+                    grid-row: 2
+
+                .email
+                    grid-row: 3
+
+                .phone
+                    grid-row: 4
+
+                textarea
+                    grid-row: 5
+
+                button
+                    grid-row: 6
+
+        &-b
+            .contact-info
+                grid-template-columns: 1fr
+                gap: 5rem
