@@ -20,10 +20,10 @@
             <nav class="main-nav">
                 <img src="../img/logo.png" alt="" class="main-nav__logo">
                 <ul class="main-nav__items">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="references.html">References</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="../index.html">ana sayfa</a></li>
+                    <li><a href="about.html">hakkımda</a></li>
+                    <li><a href="references.html">referanslar</a></li>
+                    <li><a href="contact.html" class="active">iletişim</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,15 +32,17 @@
     <!--First Section-->
     <section id="contact-a" class="pt-3 pb-3">
         <div class="mycontainer">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title">İLETİŞİM</h2>
             <div class="no-content"></div>
-            <form action="">
-                <input type="text" name="fullname" class="name" id="fullname" placeholder="Your full name"/>
-                <input type="text" name="subject" class="subject" id="subject" placeholder="Subject"/>
-                <input type="email" name="email" class="email" id="email" placeholder="Your e-mail adress"/>
-                <input type="tel" name="phone" class="phone" id="phone" placeholder="Your phone number"/>
-                <textarea name="message" class="message" id="message" placeholder="Enter your message"></textarea>
-                <button type="submit" class="btnstyle-main">SEND</button>
+            <form   
+                action="https://formspree.io/f/mzbqeyak"
+                method="POST">
+                <input type="text" name="fullname" class="name" id="fullname" placeholder="Adınız Soyadınız"/>
+                <input type="text" name="subject" class="subject" id="subject" placeholder="Konu"/>
+                <input type="email" name="email" class="email" id="email" placeholder="E-posta Adresiniz"/>
+                <input type="tel" name="phone" class="phone" id="phone" placeholder="Telefon Numaranız"/>
+                <textarea name="message" class="message" id="message" placeholder="Mesajınız"></textarea>
+                <button type="submit" class="btnstyle-main">GÖNDER</button>
             </form>
         </div>
     </section>
@@ -55,12 +57,12 @@
                 </div>
                 <div>
                     <i class="fas fa-phone fa-2x"></i>
-                    <h3>Phone</h3>
+                    <h3>GSM</h3>
                     <p>+90 535 741 45 11</p>
                 </div>
                 <div>
                     <i class="fas fa-address-card fa-2x"></i>
-                    <h3>Adress</h3>
+                    <h3>Adres</h3>
                     <p>Antakya / HATAY</p>
                 </div>
             </div>
@@ -71,14 +73,13 @@
     <footer id="footer__home" class="footer__home">
         <div class="mycontainer footer-content">
             <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptatem distinctio
-                 odit, nobis consequatur ratione rem. Quae aliquam expedita consectetur?</p>
+                <p>Web Sitesi ve Mobil Uygulama için bana ulaşabilirsiniz.</p>
             </div>
             <div>
-                <h3>Contact Me</h3>
-                <label for="footer-email">Your e-mail adress</label>
-                <input type="email" name="footer-email" placeholder="Your e-mail adress"/>
-                <button type="submit" class="btnstyle-main">GÖNDER</button>
+                <h3>İletişim</h3>
+                <p>Bana Ulaşın</p>
+                <br />
+                <a href="./contact.html" class="btnstyle-main" style="width: 50%; text-align: center">İLETİŞİM</a>
             </div>
             <div class="mysocial">
                 <a href="https://facebook.com/ysertacc" target="_blank"><i class="fab fa-facebook"></i></a>
